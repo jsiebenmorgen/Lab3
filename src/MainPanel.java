@@ -9,7 +9,7 @@ public class MainPanel extends JPanel {
 
     public static void main(String[] args) {
         int x = 1080;
-        int y = 720;
+        int y = 760;
 
         JFrame frame = new JFrame();
         StatsPanel statsPanel = new StatsPanel();

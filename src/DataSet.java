@@ -26,7 +26,7 @@ class Conviction {
     }
 }
 
-public class DataSet {
+interface DataSet {
 
     public static List<Conviction> readFelonyConvictions(String filePath) {
         List<Conviction> felonyConvictions = new ArrayList<>();

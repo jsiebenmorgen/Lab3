@@ -23,7 +23,7 @@ public class DetailsPanel extends JPanel {
     }
 
     public void DetailsWindow() {
-        data = readCSV("North_Carolina_Criminal_Records.csv"); // Update this path
+        data = readCSV("test.csv"); // Update this path
         String[] columnNames = {
                 "ID", "Year of Birth", "Zip Code", "Screening Created At", "Scope",
                 "County", "State", "Court Jurisdiction", "C_ID", "Charge",

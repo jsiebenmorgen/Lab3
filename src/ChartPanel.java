@@ -12,6 +12,13 @@ import java.io.IOException;
 
 public class ChartPanel extends JPanel {
 
+    private StatsPanel statsPanel; // Reference to StatsPanel
+
+    // Method to set the StatsPanel reference
+    public void setStatsPanel(StatsPanel statsPanel) {
+        this.statsPanel = statsPanel;
+    }
+
     private int felonyCount = 0;
     private int nonFelonyCount = 0;
     private int trafficCount = 0;
@@ -20,12 +27,14 @@ public class ChartPanel extends JPanel {
     private JCheckBox checkBox1; // Compare felons to non-felons
     private JCheckBox checkBox2; // Compare traffic to other crimes
 
+
     ChartPanel() {
         this.setBackground(Color.LIGHT_GRAY);
         this.setBounds(540, 0, 540, 360);
         this.setLayout(null); // Use null layout for absolute positioning
         initializeComponents();
         openFile(); // Automatically open the CSV file when the class is instantiated
+
 
     }
 

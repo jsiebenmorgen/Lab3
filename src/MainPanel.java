@@ -13,6 +13,7 @@ public class MainPanel extends JPanel {
         DetailsPanel detailsPanel = new DetailsPanel();
         TablePanel tablePanel = new TablePanel();
 
+
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.setLayout(null);
         frame.setSize(x, y);
@@ -22,9 +23,6 @@ public class MainPanel extends JPanel {
         frame.add(chartPanel);
         frame.add(detailsPanel);
         frame.add(tablePanel);
-
-
-
 
     }
 

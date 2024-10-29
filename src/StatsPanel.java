@@ -10,12 +10,14 @@ public class StatsPanel extends JPanel {
     private JLabel modeLabel;
     private JLabel stdDevLabel;
 
+
     private int[] data; // To hold the data for statistics
 
     StatsPanel() {
         this.setBackground(Color.GRAY);
         this.setLayout(new GridLayout(4, 1)); // Use GridLayout for organized display
         this.setBounds(0, 0, 540, 360);
+
 
         meanLabel = new JLabel("Mean: ");
         medianLabel = new JLabel("Median: ");

@@ -18,7 +18,7 @@ public class DetailsPanel extends JPanel {
 
     DetailsPanel() {
         this.setBackground(Color.BLUE);
-        this.setBounds(0, 360, 540, 360);
+        this.setBounds(0, 360, 540, 330);
         this.DetailsWindow();
     }
 
@@ -43,7 +43,7 @@ public class DetailsPanel extends JPanel {
         JScrollPane scrollPane = new JScrollPane(table);
         scrollPane.setHorizontalScrollBarPolicy(JScrollPane.HORIZONTAL_SCROLLBAR_ALWAYS);
         scrollPane.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
-        scrollPane.setPreferredSize(new Dimension(530, 350));
+        scrollPane.setPreferredSize(new Dimension(530, 300));
         this.setLayout(new BorderLayout()); // Set layout for the panel
         this.add(scrollPane, BorderLayout.CENTER);
 
